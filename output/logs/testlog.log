@@ -1647,3 +1647,6 @@
 2023-03-29 14:32:19,778 - logger_File -INFO - user wrote the healine and describtion
 2023-03-29 14:32:19,896 - logger_File -INFO - user click review button
 2023-03-29 14:32:20,773 - logger_File -INFO - review message displayed
+2023-04-01 22:46:36,422 - logger_File -INFO - user is on retail website
+2023-04-01 22:46:36,805 - logger_File -INFO - User clicked on all icon button
+2023-04-01 22:46:36,965 - logger_File -INFO - options Electronics, Computers, Smart Home, Sports and Automative are present

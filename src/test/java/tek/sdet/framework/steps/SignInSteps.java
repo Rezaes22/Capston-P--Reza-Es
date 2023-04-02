@@ -13,7 +13,6 @@ import tek.sdet.framework.utilities.CommonUtility;
 public class SignInSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-//	Scenario 1 - signin1
 	
 	@When("User click on sign in option")
 	public void userClickonSignInButton() {
@@ -41,7 +40,7 @@ public class SignInSteps extends CommonUtility {
 		click(factory.homePage().logoutoption);
 		logger.info("user logged out");
 	}
-//	Scenario 1 - signin1
+	
 	@And("User click on Create New Account button")
 	public void userClickOnNewAcc() {
 		click(factory.signInPage().createNewAccountButton);

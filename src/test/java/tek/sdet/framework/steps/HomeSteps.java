@@ -17,7 +17,6 @@ import tek.sdet.framework.utilities.CommonUtility;
 public class HomeSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-//	1 Scenario
 	@Given("user is on retail website")
 	public void userIsonRetailWEb() throws InterruptedException {
 		String ActualTitle = getTitle();
@@ -40,7 +39,6 @@ public class HomeSteps extends CommonUtility {
 		logger.info("product is displayed");
 	}
 
-//	2 Scenario
 	@When("User click on All section")
 	public void clickingAllTheButton() {
 		click(factory.homePage().allIconbutton);
@@ -55,7 +53,6 @@ public class HomeSteps extends CommonUtility {
 		logger.info("options Electronics, Computers, Smart Home, Sports and Automative are present");
 	}
 
-//	3 scenario
 	@And("User on {string}")
 	public void displayingItem(String departement) {
 		List<WebElement> dept = factory.homePage().sidebar;
@@ -81,7 +78,6 @@ public class HomeSteps extends CommonUtility {
 		}
 	}
 
-	// scenario 4
 
 	@And("User change the category to {string}")
 	public void category(String namee) {
@@ -120,7 +116,6 @@ public class HomeSteps extends CommonUtility {
 		logger.info("User clicked add to Cart button");
 	}
 
-//	Scenario 5
 
 	@And("User click on Cart option")
 	public void clickoption() {
@@ -152,7 +147,6 @@ public class HomeSteps extends CommonUtility {
 		logger.info("User clicked on Place Your Order");
 	}
 
-//	Scenario 6
 
 	@And("User change the categorys to {string}")
 	public void changeTOElectronics(String electronic) {

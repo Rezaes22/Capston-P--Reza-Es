@@ -9,7 +9,6 @@ import tek.sdet.framework.utilities.CommonUtility;
 public class Retail_order_steps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-//	 Scenario 1
 	
 	@And("User click on Orders section")
 	public void userClickOnOrdersSec() {
@@ -44,7 +43,6 @@ public class Retail_order_steps extends CommonUtility {
 		logger.info("Message should be displayed");
 	}
 	
-//	Scenario 2
 	
 	@And("User click on Return Items button")
 	public void returnitem() {
@@ -74,7 +72,6 @@ public class Retail_order_steps extends CommonUtility {
 	logger.info("user ger the cancelation message");
 }
 	
-//	Scenario 3
 	
 	@And("User click on Review button")
 	public void reviewbtn() {
@@ -101,11 +98,5 @@ public class Retail_order_steps extends CommonUtility {
 
 
 	}
-
-
-
-
-
-
 
 }

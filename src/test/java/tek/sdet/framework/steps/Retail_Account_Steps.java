@@ -14,7 +14,6 @@ import tek.sdet.framework.utilities.CommonUtility;
 public class Retail_Account_Steps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-//	1 scenario
 	@When("User click on Account option")
 	public void clickOnaccountOtion() {
 		click(factory.homePage().accountOption);
@@ -44,7 +43,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		logger.info("user profile should be updated");
 	}
 
-//		2 Scenario
 	@When("User enter below information")
 	public void userEnterBelowInformation(DataTable dataTable) {
 		List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
@@ -67,7 +65,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		logger.info("User updated Successfully");
 	}
 
-//	3 Scenario
 	@When("User click on Add a payment method link")
 	public void userClickOnAddAPayment() {
 		click(factory.account().addApaymentMethodOption);
@@ -75,8 +72,6 @@ public class Retail_Account_Steps extends CommonUtility {
 	}
 
 	@And("User fill Debit or credit card information")
-//	| cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
-//    | value      | value      | value           | value          | value        |
 	public void userFillDebitInfo(DataTable dataTable) {
 		List<Map<String, String>> name = dataTable.asMaps(String.class, String.class);
 		sendText(factory.account().cardNumber, name.get(0).get("cardNumber"));
@@ -99,7 +94,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.account().paymentMethodaddedsuccessfully));
 		logger.info("User should be able to see the message below");
 	}
-//	4 Scenario
 
 	@And("User click on Edit option of card section")
 	public void clickingOnEdit() {
@@ -110,8 +104,6 @@ public class Retail_Account_Steps extends CommonUtility {
 
 	@And("user edit information with below data")
 	public void putTheInformation(DataTable dataTable) {
-//		 | cardNumber | nameOnCard | expirationMonth | expirationYear | securityCode |
-//	      | value      | value      | value           | value          | value        |
 		List<Map<String, String>> name = dataTable.asMaps(String.class, String.class);
 		clearTextUsingSendKeys(factory.account().cardNumber);
 		sendText(factory.account().cardNumber, name.get(0).get("cardNumber"));
@@ -136,7 +128,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.account().paymentupdatedSuccessfully));
 		logger.info("User should be able to see the message");
 	}
-//	5 Scenario
 
 	@And("User click on remove option of card section")
 	public void remove() {
@@ -149,7 +140,6 @@ public class Retail_Account_Steps extends CommonUtility {
 	public void messageForRemoving() {
 		logger.info("User should removed the card");
 	}
-//	6 Scenario
 
 	@When("User click on Add address option")
 	public void clickingOnAddressOption() {
@@ -183,7 +173,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.account().addressAddedSuccessfullyMessage));
 		logger.info("User should be able to see the message");
 	}
-//	7 Scenario
 
 	@When("User click on edit address option")
 	public void clickOnEdit() {
@@ -224,7 +213,6 @@ public class Retail_Account_Steps extends CommonUtility {
 		logger.info("Message displayed");
 	}
 
-//  8 Scenario
 	@When("User click on remove option of Address section")
 	public void userClickOnRemove() {
 		click(factory.account().removeButtForREmovingAddress);
